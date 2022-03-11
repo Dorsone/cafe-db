@@ -25,10 +25,13 @@ class DatabaseSeeder extends Seeder
             GroupProdSeeder::class,
             CategorySeeder::class,
             ProductSeeder::class,
+            StorageSeeder::class,
+            StorageDepSeeder::class,
             DishSeeder::class,
             HalfstaffSeeder::class,
             DishStructureSeeder::class,
             DishStructure2Seeder::class,
+            SoldPlanSeeder::class,
         ]);
     }
 }
