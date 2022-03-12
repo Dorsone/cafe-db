@@ -18,18 +18,14 @@ class ProductFactory extends Factory
     public function definition()
     {
         $measure_id = Measurement::query()->inRandomOrder()->first()->measure_id;
-        $groupProd_id = GroupProd::query()->inRandomOrder()->first()->groupProd_id;
         $department_id = Department::query()->inRandomOrder()->first()->department_id;
-        $category_id = Category::query()->inRandomOrder()->first()->category_id;
         return [
             'name' => $this->faker->word(),
             'measure_id' => $measure_id,
-            'groupProd_id' => $groupProd_id,
             'price' => $this->faker->numberBetween(1000, 100000),
             'department_id' => $department_id,
             'status' => $this->faker->numberBetween(1, 10),
             'distrib' => $this->faker->numberBetween(1, 10),
-            'category_id' => $category_id,
         ];
     }
 }

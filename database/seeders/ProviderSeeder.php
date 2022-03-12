@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\GroupProd;
+use App\Models\Provider;
 use Illuminate\Database\Seeder;
 
-class GroupProdSeeder extends Seeder
+class ProviderSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class GroupProdSeeder extends Seeder
      */
     public function run()
     {
-        GroupProd::factory(100)->create();
+        Provider::factory(5)->create();
     }
 }

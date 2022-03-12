@@ -19,7 +19,7 @@ class HalfstaffFactory extends Factory
             'name' => $this->faker->word(),
             'stuff_type' => $this->faker->numberBetween(1, 100),
             'price' => $this->faker->numberBetween(1, 100),
-            'count' => true,
+            'count' => 0,
             'department_id' => $department_id,
             'status' => $this->faker->numberBetween(1, 10),
             'distrib' => $this->faker->numberBetween(1, 10),

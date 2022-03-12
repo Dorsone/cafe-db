@@ -14,6 +14,6 @@ class TableSeeder extends Seeder
      */
     public function run()
     {
-        Table::factory(100)->create();
+        Table::factory(30)->create();
     }
 }

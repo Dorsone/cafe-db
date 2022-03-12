@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class TypeFactory extends Factory
+class DishTypeFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -15,6 +15,7 @@ class TypeFactory extends Factory
     {
         return [
             'name' => $this->faker->word(),
+            'parent' => 0,
         ];
     }
 }

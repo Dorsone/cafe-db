@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Constants\MeasurementConstant;
 use App\Models\Measurement;
 use Illuminate\Database\Seeder;
 
@@ -14,6 +15,11 @@ class MeasurementSeeder extends Seeder
      */
     public function run()
     {
-        Measurement::factory(100)->create();
+        Measurement::query()->insert([
+            ['name' => MeasurementConstant::METRE],
+            ['name' => MeasurementConstant::LITRE],
+            ['name' => MeasurementConstant::PIECE],
+            ['name' => MeasurementConstant::KILOGRAM],
+        ]);
     }
 }

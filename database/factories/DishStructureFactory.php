@@ -20,7 +20,7 @@ class DishStructureFactory extends Factory
         return [
             'dish_id' => $dish_id,
             'prod_id' => $prod_id,
-            'amount' => false,
+            'amount' => 0,
         ];
     }
 }

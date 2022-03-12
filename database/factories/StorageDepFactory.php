@@ -19,7 +19,7 @@ class StorageDepFactory extends Factory
         $department_id = Department::query()->inRandomOrder()->first()->department_id;
         return [
             'prod_id' => $prod_id,
-            'cnt' => false,
+            'cnt' => 0.1,
             'department_id' => $department_id,
             'prod_type' => $this->faker->numberBetween(1, 20),
         ];

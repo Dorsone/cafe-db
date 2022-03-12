@@ -17,7 +17,7 @@ class StorageFactory extends Factory
         $prod_id = Product::query()->inRandomOrder()->first()->product_id;
         return [
             'prod_id' => $prod_id,
-            'cnt' => true,
+            'cnt' => 0,
         ];
     }
 }

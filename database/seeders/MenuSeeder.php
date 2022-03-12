@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\SoldPlan;
+use App\Models\Menu;
 use Illuminate\Database\Seeder;
 
-class SoldPlanSeeder extends Seeder
+class MenuSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class SoldPlanSeeder extends Seeder
      */
     public function run()
     {
-        SoldPlan::factory(100)->create();
+        Menu::factory(10)->create();
     }
 }

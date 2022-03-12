@@ -2,8 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\DishStructure2;
-use App\Models\Halfstaff;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -17,21 +15,19 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([
             UserSeeder::class,
-            OrderpointSeeder::class,
+            DishTypeSeeder::class,
             DepartmentSeeder::class,
             TableSeeder::class,
-            TypeSeeder::class,
             MeasurementSeeder::class,
-            GroupProdSeeder::class,
-            CategorySeeder::class,
             ProductSeeder::class,
             StorageSeeder::class,
+            MenuSeeder::class,
             StorageDepSeeder::class,
             DishSeeder::class,
             HalfstaffSeeder::class,
             DishStructureSeeder::class,
             DishStructure2Seeder::class,
-            SoldPlanSeeder::class,
+            ProductSeeder::class,
         ]);
     }
 }

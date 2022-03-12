@@ -14,11 +14,9 @@ class DepartmentFactory extends Factory
      */
     public function definition()
     {
-        $point_id = Orderpoint::query()->inRandomOrder()->first()->point_id;
         return [
             'name' => $this->faker->word(),
             'color' => $this->faker->colorName(),
-            'point_id' => $point_id,
             'status' => $this->faker->numberBetween(1, 10),
             'printer' => $this->faker->word(),
         ];

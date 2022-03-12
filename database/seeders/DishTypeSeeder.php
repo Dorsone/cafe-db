@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Type;
+use App\Models\DishType;
 use Illuminate\Database\Seeder;
 
-class TypeSeeder extends Seeder
+class DishTypeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class TypeSeeder extends Seeder
      */
     public function run()
     {
-        Type::factory(100)->create();
+        DishType::factory(20)->create();
     }
 }

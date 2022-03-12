@@ -5,9 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class GroupProd extends Model
+class Provider extends Model
 {
     use HasFactory;
 
-    protected $table = 'group_prod';
+    protected $table = 'provider';
 }
