@@ -29,6 +29,7 @@ class DatabaseSeeder extends Seeder
             DishStructure2Seeder::class,
             ProductSeeder::class,
             HalfstuffStructureSeeder::class,
+            SettingSeeder::class,
         ]);
     }
 }

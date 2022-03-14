@@ -2,10 +2,6 @@
 
 namespace App\Constants;
 
-/**
- * Class TournamentStatusConstant
- * @package App\Constants
- */
 class MeasurementConstant
 {
 
