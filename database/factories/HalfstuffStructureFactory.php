@@ -2,11 +2,11 @@
 
 namespace Database\Factories;
 
-use App\Models\Dish;
 use App\Models\Halfstaff;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class DishStructure2Factory extends Factory
+class HalfstuffStructureFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -15,12 +15,13 @@ class DishStructure2Factory extends Factory
      */
     public function definition()
     {
-        $dish_id = Dish::query()->inRandomOrder()->first()->dish_id;
         $halfstuff_id = Halfstaff::query()->inRandomOrder()->first()->halfstuff_id;
+        $prod_id = Product::query()->inRandomOrder()->first()->product_id;
         return [
-            'dish_id' => $dish_id,
             'halfstuff_id' => $halfstuff_id,
+            'prod_id' => $prod_id,
             'amount' => $this->faker->randomFloat(2, 0, 5),
+            'types' => $this->faker->numberBetween(1, 3),
         ];
     }
 }

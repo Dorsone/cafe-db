@@ -2,10 +2,10 @@
 
 namespace Database\Seeders;
 
-use App\Models\Department;
+use App\Models\HalfstuffStructure;
 use Illuminate\Database\Seeder;
 
-class DepartmentSeeder extends Seeder
+class HalfstuffStructureSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -14,6 +14,6 @@ class DepartmentSeeder extends Seeder
      */
     public function run()
     {
-        Department::factory(10)->create();
+        HalfstuffStructure::factory(100)->create();
     }
 }

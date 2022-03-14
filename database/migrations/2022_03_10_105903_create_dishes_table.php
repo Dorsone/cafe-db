@@ -21,7 +21,6 @@ class CreateDishesTable extends Migration
             $table->float('count');
             $table->integer('department_id');
             $table->integer('status');
-            $table->integer('distrib');
             $table->timestamps();
         });
     }

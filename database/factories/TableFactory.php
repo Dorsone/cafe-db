@@ -14,8 +14,8 @@ class TableFactory extends Factory
     public function definition()
     {
         return [
-            'table_num' => $this->faker->numberBetween(1, 50),
-            'status' => $this->faker->numberBetween(1, 10),
+            'table_num' => $this->faker->unique()->numberBetween(1, 50),
+            'status' => $this->faker->numberBetween(0, 1),
         ];
     }
 }

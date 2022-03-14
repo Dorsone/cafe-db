@@ -17,7 +17,7 @@ class DepartmentFactory extends Factory
         return [
             'name' => $this->faker->word(),
             'color' => $this->faker->colorName(),
-            'status' => $this->faker->numberBetween(1, 10),
+            'status' => $this->faker->numberBetween(0, 1),
             'printer' => $this->faker->word(),
         ];
     }

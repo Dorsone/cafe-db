@@ -24,8 +24,7 @@ class ProductFactory extends Factory
             'measure_id' => $measure_id,
             'price' => $this->faker->numberBetween(1000, 100000),
             'department_id' => $department_id,
-            'status' => $this->faker->numberBetween(1, 10),
-            'distrib' => $this->faker->numberBetween(1, 10),
+            'status' => $this->faker->numberBetween(0, 1),
         ];
     }
 }

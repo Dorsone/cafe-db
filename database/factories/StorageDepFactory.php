@@ -15,13 +15,13 @@ class StorageDepFactory extends Factory
      */
     public function definition()
     {
-        $prod_id = Product::query()->inRandomOrder()->first()->prod_id;
+        $prod_id = Product::query()->inRandomOrder()->first()->product_id;
         $department_id = Department::query()->inRandomOrder()->first()->department_id;
         return [
             'prod_id' => $prod_id,
-            'cnt' => 0.1,
+            'cnt' => $this->faker->randomFloat(2, 0, 5),
             'department_id' => $department_id,
-            'prod_type' => $this->faker->numberBetween(1, 20),
+            'prod_type' => $this->faker->numberBetween(1, 3),
         ];
     }
 }

@@ -16,11 +16,11 @@ class DishStructureFactory extends Factory
     public function definition()
     {
         $dish_id = Dish::query()->inRandomOrder()->first()->dish_id;
-        $prod_id = Product::query()->inRandomOrder()->first()->prod_id;
+        $prod_id = Product::query()->inRandomOrder()->first()->product_id;
         return [
             'dish_id' => $dish_id,
             'prod_id' => $prod_id,
-            'amount' => 0,
+            'amount' => $this->faker->randomFloat(2, 0, 5),
         ];
     }
 }

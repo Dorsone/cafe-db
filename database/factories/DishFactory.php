@@ -16,12 +16,11 @@ class DishFactory extends Factory
         $department_id = $this->faker->numberBetween(1, 100);
         return [
             'name' => $this->faker->word(),
-            'price' => 0,
-            'percent' => 0,
-            'count' => 0,
+            'price' => $this->faker->randomFloat(2, 1, 10000),
+            'percent' => $this->faker->randomFloat(2, 5, 90),
+            'count' => $this->faker->randomFloat(2, 0, 5),
             'department_id' => $department_id,
-            'status' => $this->faker->numberBetween(1, 10),
-            'distrib' => $this->faker->numberBetween(1, 10),
+            'status' => $this->faker->numberBetween(0, 1),
         ];
     }
 }
